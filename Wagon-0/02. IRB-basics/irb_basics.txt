@@ -1,36 +1,34 @@
-irb(main):001:0> my_name= "benoit"
-=> "benoit"
+irb(main):001:0> my_name = "tobias"
+=> "tobias"
 irb(main):002:0> def say_hi_to(name)
-irb(main):003:1> puts "Hello Ben! Welcome to the ouagon!"
+irb(main):003:1>
+.git/      README.md  Wagon-0/   Wagon-1/   Wagon-2/   Wagon-3/   Wagon-4/
+irb(main):003:1> puts hallo name
 irb(main):004:1> end
+=> :say_hi_to
+irb(main):005:0> say_hi_to("tob")
+NoMethodError: undefined method `hallo' for main:Object
+	from (irb):3:in `say_hi_to'
+	from (irb):5
+	from /usr/bin/irb:11:in `<main>'
+irb(main):006:0> def say_hi_to(name)
+irb(main):007:1> puts "hallo" name
+irb(main):008:1> end
+SyntaxError: (irb):7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+	from /usr/bin/irb:11:in `<main>'
+irb(main):009:0> def say_hi_to(name)
+irb(main):010:1> puts "hallo #{name} wie gehts"
+irb(main):011:1> end
+=> :say_hi_to
+irb(main):012:0> say_hi_to "Tobias"
+hallo Tobias wie gehts
 => nil
-irb(main):005:0> 
-irb(main):006:0* 
-irb(main):007:0* 
-irb(main):008:0* cke
-NameError: undefined local variable or method `cke' for main:Object
-	from (irb):8
-	from /usr/bin/irb:12:in `<main>'
-irb(main):009:0> say_hi_to
-ArgumentError: wrong number of arguments (0 for 1)
-	from (irb):2:in `say_hi_to'
-	from (irb):9
-	from /usr/bin/irb:12:in `<main>'
-irb(main):010:0> my_name
-=> "benoit"
-irb(main):011:0> say_hi_to(my_name)
-Hello Ben! Welcome to the ouagon!
+irb(main):013:0> say_hi_to(my_name)
+hallo tobias wie gehts
 => nil
-irb(main):012:0> def say_hi_to(my_name)
-irb(main):013:1> puts "Hello #{my_name}! Welcome to the ouagon!"
-irb(main):014:1> end
+irb(main):014:0> my_name = "peter"
+=> "peter"
+irb(main):015:0> say_hi_to my_name
+hallo peter wie gehts
 => nil
-irb(main):015:0> say_hi_to(my_name)
-Hello benoit! Welcome to the ouagon!
-=> nil
-irb(main):016:0> prenom= "Chris"
-=> "Chris"
-irb(main):017:0> say_hi_to(prenom)
-Hello Chris! Welcome to the ouagon!
-=> nil
-irb(main):018:0>
+irb(main):016:0>

@@ -1,5 +1,7 @@
 def age_in_days(day, month, year)
-  # your code goes here !
+  dob = Time.new(year, month, day)
+  now = Time.new
+  return (now - dob).to_i / (24 * 60 * 60)
 end
 
 

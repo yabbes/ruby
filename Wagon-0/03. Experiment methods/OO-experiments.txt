@@ -1,2 +1,10 @@
 // Copy some experiments you made on ruby String and Fixnum objects below !
 // You choose pick 3 methods for String and 3 methods for Fixnum
+
+1.nil? => false
+2.equal? 3 => false
+2.remainder
+
+"string".upcase
+"string".swapcase
+"string blabla".split
